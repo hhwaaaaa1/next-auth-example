@@ -30,7 +30,7 @@ export default function Home() {
         ) : (
           <button
             className={`${styles.button}`}
-            onClick={() => signIn()}
+            onClick={() => signIn(undefined, { callbackUrl: '/my' })}
           >
             Sign In
           </button>
